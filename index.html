@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TodoList</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Todo List</h1>
+    </header>
+    <form>
+        <div>
+            <input type="text" class="todo-input" />
+            <button class="todo-button" type="submit">
+                <i class="fas fa-plus-square"></i>
+            </button>
+        </div>
+        <div class="filterOptions">
+            <div>
+                <label>All</label>
+                <input type="radio" name="filter" value="all" class="allOption" checked />
+            </div>
+            <div>
+                <label>Completed</label>
+                <input type="radio" name="filter" value="completed" class="completedOption" />
+            </div>
+            <div>
+                <label>Uncompleted</label>
+                <input type="radio" name="filter" value="uncompleted" class="uncompletedOption" />
+            </div>
+        </div>
+    </form>
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
